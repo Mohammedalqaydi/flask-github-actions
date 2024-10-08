@@ -29,5 +29,5 @@ jobs:
         with:
           push: true
           tags: |
-             mohammedalharbi/workflows_image:latest
-             mohammedalharbi/workflows_image: ${{ github.sha }}
+             mohammedalharbi/python:latest
+             mohammedalharbi/python: ${{ github.sha }}
