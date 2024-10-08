@@ -30,4 +30,4 @@ jobs:
           push: true
           tags: |
              mohammedalharbi/workflows_image:latest
-             mohammedalharbi/workflows_image:£{{ github.sha }}
+             mohammedalharbi/workflows_image: ${{ github.sha }}
