@@ -3,4 +3,4 @@
 services:
   test:
     build: .
-    command: run pytest 
+    command: pytest 
