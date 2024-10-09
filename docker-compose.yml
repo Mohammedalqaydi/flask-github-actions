@@ -1,6 +1,6 @@
+
+
 services:
- 
-   test:
-    build :
-   command: python pytest 
-         
+  test:
+    build: .
+    command: pytest test_app.py
