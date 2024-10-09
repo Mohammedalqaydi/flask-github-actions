@@ -1,0 +1,20 @@
+name : pull to check the code 
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  name: Check code from repo 
+  runs-on: ubuntu-latest
+  steps:
+    - name: fetch code from repository
+      uses: actions/checkout@v4
+
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v3
+      
+    - name: Run docker compose 
+      run: docker-compose up -d
+    
